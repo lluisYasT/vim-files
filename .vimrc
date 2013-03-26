@@ -4,7 +4,7 @@ filetype plugin indent on
 
 colorscheme molokai
 
-set guifont=Anonymous\ Pro\ 11
+set guifont=Anonymous\ Pro\ for\ Powerline\ 11
 
 "Tabs are two spaces
 set ts=2 sts=2 sw=2 expandtab
@@ -43,3 +43,7 @@ cmap w!! w !sudo tee % > /dev/null
 "Enable HardMode
 autocmd VimEnter,BufNewFile,BufReadPost * silent! call HardMode()
 nnoremap <leader>h <Esc>:call ToggleHardMode()<CR>
+
+set encoding=utf-8
+
+set laststatus=2
