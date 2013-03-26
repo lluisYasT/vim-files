@@ -25,3 +25,9 @@
 [submodule "bundle/hardmode"]
 	path = bundle/hardmode
 	url = git@github.com:wikitopian/hardmode.git
+[submodule "bundle/vim-seek"]
+	path = bundle/vim-seek
+	url = git@github.com:goldfeld/vim-seek.git
+[submodule "bundle/vim-easymotion"]
+	path = bundle/vim-easymotion
+	url = git@github.com:Lokaltog/vim-easymotion
