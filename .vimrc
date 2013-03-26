@@ -9,18 +9,6 @@ set guifont=Anonymous\ Pro\ 11
 "Tabs are two spaces
 set ts=2 sts=2 sw=2 expandtab
 
-"You shouldn't use these
-noremap <Up> <NOP>
-noremap <Down> <NOP>
-noremap <Left> <NOP>
-noremap <Right> <NOP>
-
-"To brake bad habits
-noremap h <NOP>
-noremap j <NOP>
-noremap k <NOP>
-noremap l <NOP>
-
 "Better leader key for a spanish layout
 let mapleader = ","
 
@@ -51,3 +39,7 @@ nmap <silent> ,/ :nohlsearch<CR>
 
 "In case I forget to use sudo when editing a system file
 cmap w!! w !sudo tee % > /dev/null
+
+"Enable HardMode
+autocmd VimEnter,BufNewFile,BufReadPost * silent! call HardMode()
+nnoremap <leader>h <Esc>:call ToggleHardMode()<CR>
