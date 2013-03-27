@@ -46,10 +46,10 @@ set laststatus=2
 set t_Co=256
 
 if has("gui_running")
+  set lines=40
   colorscheme slate
   set guioptions-=T
 else
   colorscheme molokai
 endif
 
-set lines=40
