@@ -2,11 +2,6 @@ execute pathogen#infect()
 syntax on
 filetype plugin indent on
 
-colorscheme molokai
-
-set guifont=Anonymous\ Pro\ for\ Powerline\ 11
-
-"Tabs are two spaces
 set ts=2 sts=2 sw=2 expandtab
 
 "Better leader key for a spanish layout
@@ -47,3 +42,14 @@ nnoremap <leader>h <Esc>:call ToggleHardMode()<CR>
 set encoding=utf-8
 
 set laststatus=2
+
+set t_Co=256
+
+if has("gui_running")
+  colorscheme slate
+  set guioptions-=T
+else
+  colorscheme molokai
+endif
+
+set lines=40
