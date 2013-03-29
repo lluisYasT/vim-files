@@ -55,10 +55,6 @@ nmap <silent> ,/ :nohlsearch<CR>
 "In case I forget to use sudo when editing a system file
 cmap w!! w !sudo tee % > /dev/null
 
-"Enable HardMode
-autocmd VimEnter,BufNewFile,BufReadPost * silent! call HardMode()
-nnoremap <leader>h <Esc>:call ToggleHardMode()<CR>
-
 set encoding=utf-8
 
 set laststatus=2
@@ -74,3 +70,7 @@ else
 endif
 
 nnoremap <leader>w <C-w>v<C-w>l
+
+"Yankring maps
+nnoremap <silent> <F3> :YRShow<CR>
+inoremap <silent> <F3> <ESC>:YRShow<CR>
