@@ -74,3 +74,6 @@ nnoremap <leader>w <C-w>v<C-w>l
 "Yankring maps
 nnoremap <silent> <F3> :YRShow<CR>
 inoremap <silent> <F3> <ESC>:YRShow<CR>
+
+"Disable the mouse
+set mouse-=a
