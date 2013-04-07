@@ -40,6 +40,7 @@ set wrap
 set textwidth=79
 set formatoptions=qrnl
 set colorcolumn=85
+set autowrite
 
 au FocusLost * :wa
 
@@ -65,8 +66,13 @@ if has("gui_running")
   set lines=40
   colorscheme slate
   set guioptions-=T
+  set guioptions-=l
+  set guioptions-=r
+  set guioptions-=b
+  set guioptions-=m
+  set guifont=Anonymous\ Pro\ 8
 else
-  colorscheme molokai
+  colorscheme tir_black
 endif
 
 nnoremap <leader>w <C-w>v<C-w>l
@@ -75,5 +81,9 @@ nnoremap <leader>w <C-w>v<C-w>l
 nnoremap <silent> <F3> :YRShow<CR>
 inoremap <silent> <F3> <ESC>:YRShow<CR>
 
-"Disable the mouse
-set mouse-=a
+
+"Ctags
+let Tlist_Ctags_Cmd = "/usr/bin/ctags"
+let Tlist_WinWidth = 50
+map <F4> :TlistToggle<cr>
+map <F8> :!/usr/bin/ctags -R --c++-kinds=+p --fields=+iaS --extra=+q .<CR>
