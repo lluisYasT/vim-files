@@ -72,7 +72,7 @@ if has("gui_running")
   set guioptions-=m
   set guifont=Anonymous\ Pro\ 8
 else
-  colorscheme tir_black
+  colorscheme ir_black
 endif
 
 nnoremap <leader>w <C-w>v<C-w>l
@@ -87,3 +87,6 @@ let Tlist_Ctags_Cmd = "/usr/bin/ctags"
 let Tlist_WinWidth = 50
 map <F4> :TlistToggle<cr>
 map <F8> :!/usr/bin/ctags -R --c++-kinds=+p --fields=+iaS --extra=+q .<CR>
+
+set grepprg=grep\ -nH\ $*
+let g:tex_flavor = "latex"
