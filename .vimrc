@@ -64,13 +64,14 @@ set t_Co=256
 
 if has("gui_running")
   set lines=40
-  colorscheme slate
+  colorscheme molokai
   set guioptions-=T
   set guioptions-=l
   set guioptions-=r
   set guioptions-=b
-  set guioptions-=m
-  set guifont=Anonymous\ Pro\ 8
+  "set guioptions-=m
+  "set guifont=Anonymous\ Pro\ 10
+  set guifont=Monaco\ 11
 else
   colorscheme ir_black
 endif
