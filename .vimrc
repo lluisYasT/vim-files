@@ -71,7 +71,7 @@ if has("gui_running")
   set guioptions-=b
   "set guioptions-=m
   "set guifont=Anonymous\ Pro\ 10
-  set guifont=Monaco\ 11
+  set guifont=Monaco\ 9
 else
   colorscheme ir_black
 endif
