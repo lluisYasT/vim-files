@@ -2,7 +2,7 @@ execute pathogen#infect()
 syntax on
 filetype plugin indent on
 
-set ts=2 sts=2 sw=2 expandtab
+"set ts=2 sts=2 sw=2 expandtab
 
 "Better leader key for a spanish layout
 let mapleader = ","
@@ -39,7 +39,7 @@ set gdefault
 set wrap
 set textwidth=79
 set formatoptions=qrnl
-set colorcolumn=85
+"set colorcolumn=85
 set autowrite
 
 au FocusLost * :wa
@@ -91,3 +91,6 @@ map <F8> :!/usr/bin/ctags -R --c++-kinds=+p --fields=+iaS --extra=+q .<CR>
 
 set grepprg=grep\ -nH\ $*
 let g:tex_flavor = "latex"
+
+"Sentences end with two spaces instead of one after .
+set cpo+=J
