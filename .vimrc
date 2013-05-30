@@ -2,7 +2,8 @@ execute pathogen#infect()
 syntax on
 filetype plugin indent on
 
-"set ts=2 sts=2 sw=2 expandtab
+set ts=2 sts=2 sw=2
+"set expandtab
 
 "Better leader key for a spanish layout
 let mapleader = ","
@@ -64,7 +65,6 @@ set t_Co=256
 
 if has("gui_running")
   set lines=40
-  colorscheme solarized
   set guioptions-=T
   set guioptions-=l
   set guioptions-=r
@@ -72,9 +72,10 @@ if has("gui_running")
   "set guioptions-=m
   "set guifont=Anonymous\ Pro\ 10
   set guifont=Monaco\ 9
-else
-  colorscheme ir_black
 endif
+
+set background=dark
+colorscheme solarized
 
 nnoremap <leader>w <C-w>v<C-w>l
 
