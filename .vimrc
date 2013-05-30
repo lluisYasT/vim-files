@@ -60,11 +60,12 @@ set encoding=utf-8
 
 set laststatus=2
 
-set t_Co=256
+"For st. For Urxvt 256
+set t_Co=16 
 
 if has("gui_running")
   set lines=40
-  colorscheme molokai
+  colorscheme solarized
   set guioptions-=T
   set guioptions-=l
   set guioptions-=r
