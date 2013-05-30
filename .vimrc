@@ -60,8 +60,7 @@ set encoding=utf-8
 
 set laststatus=2
 
-"For st. For Urxvt 256
-set t_Co=16 
+set t_Co=256 
 
 if has("gui_running")
   set lines=40
@@ -95,3 +94,6 @@ let g:tex_flavor = "latex"
 
 "Sentences end with two spaces instead of one after .
 set cpo+=J
+
+"F5 to toggle background (dark, light)
+call togglebg#map("<F5>")
