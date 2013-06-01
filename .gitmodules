@@ -1,14 +1,14 @@
 [submodule "bundle/syntastic"]
 	path = bundle/syntastic
-	url = git://github.com/scrooloose/syntastic.git
+	url = git@github.com:scrooloose/syntastic.git
 	ignore = untracked
 [submodule "bundle/nerdcommenter"]
 	path = bundle/nerdcommenter
-	url = git://github.com/scrooloose/nerdcommenter.git
+	url = git@github.com:scrooloose/nerdcommenter.git
 	ignore = untracked
 [submodule "bundle/snipmate-snippets"]
 	path = bundle/snipmate-snippets
-	url = git://github.com/scrooloose/snipmate-snippets.git
+	url = git@github.com:scrooloose/snipmate-snippets.git
 	ignore = untracked
 [submodule "bundle/snipmate.vim"]
 	path = bundle/snipmate.vim
@@ -48,15 +48,15 @@
 	ignore = untracked
 [submodule "bundle/vim-fugitive"]
 	path = bundle/vim-fugitive
-	url = git://github.com/tpope/vim-fugitive.git
+	url = git@github.com:tpope/vim-fugitive.git
 	ignore = untracked
 [submodule "bundle/vim-git"]
 	path = bundle/vim-git
-	url = git://github.com/tpope/vim-git
+	url = git@github.com:tpope/vim-git
 	ignore = untracked
 [submodule "bundle/vim-dispatch"]
 	path = bundle/vim-dispatch
-	url = git://github.com/tpope/vim-dispatch.git
+	url = git@github.com:tpope/vim-dispatch.git
 	ignore = untracked
 [submodule "bundle/zencoding-vim"]
 	path = bundle/zencoding-vim
@@ -73,3 +73,4 @@
 [submodule "bundle/vim-niji"]
 	path = bundle/vim-niji
 	url = git@github.com:amdt/vim-niji.git
+	ignore = untracked
