@@ -104,3 +104,5 @@ autocmd bufenter * if (winnr("$") == 1 && exists("b:NERDTreeType") && b:NERDTree
 "
 "Map F1 to NERDTree
 nnoremap <silent> <F1> :NERDTreeToggle<CR>
+
+map <F6> :setlocal spell! spelllang=es<CR>
