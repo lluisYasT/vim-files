@@ -75,7 +75,7 @@ if has("gui_running")
 endif
 
 set background=dark
-colorscheme solarized
+colorscheme molokai
 
 nnoremap <leader>w <C-w>v<C-w>l
 
