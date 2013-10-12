@@ -96,8 +96,6 @@ let g:tex_flavor = "latex"
 "Sentences end with two spaces instead of one after .
 set cpo+=J
 
-"F5 to toggle background (dark, light)
-call togglebg#map("<F5>")
 
 "If the only window left open is NERDTRee, close vim
 autocmd bufenter * if (winnr("$") == 1 && exists("b:NERDTreeType") && b:NERDTreeType == "primary") | q | endif
