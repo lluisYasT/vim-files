@@ -58,10 +58,6 @@
 	path = bundle/vim-dispatch
 	url = git@github.com:tpope/vim-dispatch.git
 	ignore = untracked
-[submodule "bundle/emmet-vim"]
-	path = bundle/emmet-vim
-	url = git@github.com:mattn/emmet-vim.git
-	ignore = untracked
 [submodule "bundle/nerdtree"]
 	path = bundle/nerdtree
 	url = git@github.com:scrooloose/nerdtree.git
@@ -74,3 +70,6 @@
 	path = bundle/vim-niji
 	url = git@github.com:amdt/vim-niji.git
 	ignore = untracked
+[submodule "bundle/emmet-vim"]
+	path = bundle/emmet-vim
+	url = git@github.com:mattn/emmet-vim
