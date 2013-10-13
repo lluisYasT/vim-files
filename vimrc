@@ -24,6 +24,7 @@ set scrolloff=3
 set history=1000
 set undolevels=1000
 set nobackup
+set nowritebackup
 set noswapfile
 set showmode
 set showcmd
