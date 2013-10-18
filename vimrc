@@ -6,7 +6,7 @@ set ts=2 sts=2 sw=2
 "set expandtab "Use spaces instead of tabs
 
 "Better leader key for a spanish layout
-let mapleader = ","
+"let mapleader = ","
 
 set nocompatible
 set modelines=0
@@ -16,7 +16,7 @@ set autoindent
 set copyindent
 set number
 set showmatch
-set ignorecase
+"set ignorecase
 set smartcase
 set hlsearch
 set incsearch
