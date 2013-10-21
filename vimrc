@@ -26,6 +26,7 @@ set undolevels=1000
 set nobackup
 set nowritebackup
 set noswapfile
+set viminfo="NONE"
 set showmode
 set showcmd
 set hidden
