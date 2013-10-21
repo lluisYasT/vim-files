@@ -66,18 +66,17 @@ set laststatus=2
 set t_Co=256 
 
 if has("gui_running")
-  set lines=40
+  "set lines=80
   set guioptions-=T
   set guioptions-=l
   set guioptions-=r
   set guioptions-=b
   "set guioptions-=m
   "set guifont=Anonymous\ Pro\ 10
-  set guifont=Monaco\ 9
+  set guifont=Source\ Code\ Pro\ Medium\ 11
+	colorscheme molokai
 endif
 
-set background=dark
-colorscheme molokai
 
 nnoremap <leader>w <C-w>v<C-w>l
 
@@ -134,3 +133,8 @@ function SetGPGOptions()
 " Only open folds with insert commands.
 	set foldopen=insert
 endfunction
+
+" Yank WORD to system clipboard in normal mode
+nmap <leader>y "+yE
+
+" Yanc selection to system clipboard in visual mode
