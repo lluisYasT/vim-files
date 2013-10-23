@@ -66,15 +66,19 @@ set laststatus=2
 set t_Co=256 
 
 if has("gui_running")
-  "set lines=80
+  set lines=55
   set guioptions-=T
   set guioptions-=l
   set guioptions-=r
   set guioptions-=b
   "set guioptions-=m
   "set guifont=Anonymous\ Pro\ 10
-  set guifont=Source\ Code\ Pro\ Medium\ 11
 	"colorscheme molokai
+	set guifont=Source\ Code\ Pro\ Medium\ 10
+endif
+
+if has("gui_macvim")
+	set guifont=Source\ Code\ Pro:h12
 endif
 
 colorscheme habiLight
