@@ -74,9 +74,10 @@ if has("gui_running")
   "set guioptions-=m
   "set guifont=Anonymous\ Pro\ 10
   set guifont=Source\ Code\ Pro\ Medium\ 11
-	colorscheme molokai
+	"colorscheme molokai
 endif
 
+colorscheme habiLight
 
 nnoremap <leader>w <C-w>v<C-w>l
 
