@@ -65,6 +65,8 @@ set laststatus=2
 
 set t_Co=256 
 
+colorscheme solarized
+set background=dark
 
 if has("gui_running")
   set lines=55
@@ -74,21 +76,14 @@ if has("gui_running")
   set guioptions-=b
   "set guioptions-=m
 	set guifont=Source\ Code\ Pro\ Medium\ 10
-	colorscheme habiLight
+	set background=light
 endif
 
 if has("gui_macvim")
 	set guifont=Source\ Code\ Pro:h12
-	colorscheme habiLight
 endif
 
-"Gnome-terminal reports $TERM = xterm
-if &term == "xterm"
-	colorscheme habiLight
-else
-	colorscheme ir_black
-endif
-
+call togglebg#map("<F5>")
 
 nnoremap <leader>w <C-w>v<C-w>l
 
