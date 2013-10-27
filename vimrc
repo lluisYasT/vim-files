@@ -65,6 +65,7 @@ set laststatus=2
 
 set t_Co=256 
 
+
 if has("gui_running")
   set lines=55
   set guioptions-=T
@@ -72,16 +73,22 @@ if has("gui_running")
   set guioptions-=r
   set guioptions-=b
   "set guioptions-=m
-  "set guifont=Anonymous\ Pro\ 10
-	"colorscheme molokai
 	set guifont=Source\ Code\ Pro\ Medium\ 10
+	colorscheme habiLight
 endif
 
 if has("gui_macvim")
 	set guifont=Source\ Code\ Pro:h12
+	colorscheme habiLight
 endif
 
-colorscheme habiLight
+"Gnome-terminal reports $TERM = xterm
+if &term == "xterm"
+	colorscheme habiLight
+else
+	colorscheme ir_black
+endif
+
 
 nnoremap <leader>w <C-w>v<C-w>l
 
