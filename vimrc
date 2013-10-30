@@ -65,6 +65,10 @@ if has("gui_macvim")
 	set guifont=Source\ Code\ Pro:h12
 endif
 
+if &term == "screen"
+	colorscheme ir_black
+endif
+
 call togglebg#map("<F5>")
 
 nnoremap <leader>w <C-w>v<C-w>l
