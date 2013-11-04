@@ -69,6 +69,11 @@ if &term == "screen"
 	colorscheme ir_black
 endif
 
+"Mac Os's Terminal.app
+if &term == "xterm-256color"
+	colorscheme habiLight
+endif
+
 call togglebg#map("<F5>")
 
 nnoremap <leader>w <C-w>v<C-w>l
