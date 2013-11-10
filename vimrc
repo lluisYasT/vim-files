@@ -47,8 +47,7 @@ cmap w!! w !sudo tee % > /dev/null
 
 set t_Co=256 
 
-colorscheme solarized
-set background=dark
+colorscheme habiLight
 
 if has("gui_running")
   set lines=55
@@ -67,11 +66,6 @@ endif
 
 if &term == "screen"
 	colorscheme ir_black
-endif
-
-"Mac Os's Terminal.app
-if &term == "xterm-256color"
-	colorscheme habiLight
 endif
 
 call togglebg#map("<F5>")
@@ -135,4 +129,7 @@ endfunction
 " Yank WORD to system clipboard in normal mode
 nmap <leader>y "+yE
 
-" Yanc selection to system clipboard in visual mode
+" Yank selection to system clipboard in visual mode
+vmap <leader>y "+y
+
+" PW Generation :r!pwgen -sy 24 1
