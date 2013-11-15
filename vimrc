@@ -47,7 +47,7 @@ cmap w!! w !sudo tee % > /dev/null
 
 set t_Co=256 
 
-colorscheme habiLight
+colorscheme pyte
 
 if has("gui_running")
   set lines=55
@@ -57,7 +57,6 @@ if has("gui_running")
   set guioptions-=b
   "set guioptions-=m
 	set guifont=Source\ Code\ Pro\ Medium\ 10
-	set background=light
 endif
 
 if has("gui_macvim")
@@ -68,7 +67,7 @@ if &term == "screen"
 	colorscheme ir_black
 endif
 
-call togglebg#map("<F5>")
+"call togglebg#map("<F5>")
 
 nnoremap <leader>w <C-w>v<C-w>l
 
