@@ -47,7 +47,7 @@ cmap w!! w !sudo tee % > /dev/null
 
 set t_Co=256 
 
-colorscheme pyte
+colorscheme ir_black
 
 if has("gui_running")
   set lines=55
@@ -61,10 +61,6 @@ endif
 
 if has("gui_macvim")
 	set guifont=Source\ Code\ Pro:h12
-endif
-
-if &term == "screen"
-	colorscheme ir_black
 endif
 
 "call togglebg#map("<F5>")
