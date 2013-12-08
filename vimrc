@@ -57,6 +57,7 @@ if has("gui_running")
   set guioptions-=b
   "set guioptions-=m
 	set guifont=Source\ Code\ Pro\ Medium\ 10
+	colorscheme pyte
 endif
 
 if has("gui_macvim")
@@ -82,7 +83,7 @@ set grepprg=grep\ -nH\ $*
 let g:tex_flavor = "latex"
 
 "Sentences end with two spaces instead of one after .
-set cpo+=J
+"set cpo+=J
 
 
 "If the only window left open is NERDTRee, close vim
