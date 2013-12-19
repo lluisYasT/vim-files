@@ -129,3 +129,8 @@ nmap <leader>y "+yE
 vmap <leader>y "+y
 
 " PW Generation :r!pwgen -sy 24 1
+
+" Decrease Window Size with _
+nmap _ <C-w>-
+" Increase Window size with +
+nmap + <C-w>+
