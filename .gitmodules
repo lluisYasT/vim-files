@@ -76,3 +76,6 @@
 [submodule "bundle/vim-gnupg"]
 	path = bundle/vim-gnupg
 	url = git@github.com:jamessan/vim-gnupg.git
+[submodule "bundle/gist-vim"]
+	path = bundle/gist-vim
+	url = git@github.com:mattn/gist-vim.git
