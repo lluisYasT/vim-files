@@ -134,3 +134,5 @@ vmap <leader>y "+y
 nmap _ <C-w>-
 " Increase Window size with +
 nmap + <C-w>+
+
+let g:signify_vcs_list = ['git']
