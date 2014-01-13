@@ -136,3 +136,7 @@ nmap _ <C-w>-
 nmap + <C-w>+
 
 let g:signify_vcs_list = ['git']
+
+" Very Magic regexes always
+nnoremap / /\v
+vnoremap / /\v
