@@ -54,7 +54,7 @@ if has("gui_running")
   set guioptions-=r
   set guioptions-=b
   "set guioptions-=m
-	set guifont=Source\ Code\ Pro\ Medium\ 9
+	set guifont=Source\ Code\ Pro\ Medium\ 8
 	colorscheme pyte
 endif
 
@@ -134,3 +134,7 @@ nmap _ <C-w>-
 nmap + <C-w>+
 
 let g:signify_vcs_list = ['git']
+
+" Very Magic regexes always
+nnoremap / /\v
+vnoremap / /\v

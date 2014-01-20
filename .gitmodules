@@ -2,10 +2,6 @@
 	path = bundle/syntastic
 	url = git@github.com:scrooloose/syntastic.git
 	ignore = untracked
-[submodule "bundle/nerdcommenter"]
-	path = bundle/nerdcommenter
-	url = git@github.com:scrooloose/nerdcommenter.git
-	ignore = untracked
 [submodule "bundle/snipmate-snippets"]
 	path = bundle/snipmate-snippets
 	url = git@github.com:scrooloose/snipmate-snippets.git
@@ -58,10 +54,6 @@
 	path = bundle/vim-dispatch
 	url = git@github.com:tpope/vim-dispatch.git
 	ignore = untracked
-[submodule "bundle/nerdtree"]
-	path = bundle/nerdtree
-	url = git@github.com:scrooloose/nerdtree.git
-	ignore = untracked
 [submodule "bundle/solarized"]
 	path = bundle/solarized
 	url = git@github.com:altercation/vim-colors-solarized
@@ -82,3 +74,15 @@
 [submodule "bundle/vim-signify"]
 	path = bundle/vim-signify
 	url = git@github.com:mhinz/vim-signify.git
+[submodule "bundle/vinegar"]
+	path = bundle/vinegar
+	url = git@github.com:tpope/vim-vinegar.git
+[submodule "bundle/vim-textobj-entire"]
+	path = bundle/vim-textobj-entire
+	url = git@github.com:kana/vim-textobj-entire.git
+[submodule "bundle/vim-textobj-user"]
+	path = bundle/vim-textobj-user
+	url = git@github.com:kana/vim-textobj-user.git
+[submodule "bundle/vim-commentary"]
+	path = bundle/vim-commentary
+	url = git@github.com:tpope/vim-commentary.git
