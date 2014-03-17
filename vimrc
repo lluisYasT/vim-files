@@ -59,10 +59,10 @@ if has("gui_running")
 endif
 
 if has("gui_macvim")
-	set guifont=Source\ Code\ Pro:h12
+	set guifont=Source\ Code\ Pro\ for\ Powerline:h11
 endif
 
-"call togglebg#map("<F5>")
+call togglebg#map("<F5>")
 
 nnoremap <leader>w <C-w>v<C-w>l
 
@@ -138,3 +138,6 @@ let g:signify_vcs_list = ['git']
 " Very Magic regexes always
 nnoremap / /\v
 vnoremap / /\v
+
+let g:airline_powerline_fonts = 1
+
