@@ -89,3 +89,6 @@
 [submodule "bundle/vim-airline"]
 	path = bundle/vim-airline
 	url = https://github.com/bling/vim-airline
+[submodule "bundle/MathTagAlways"]
+	path = bundle/MathTagAlways
+	url = git@github.com:Valloric/MatchTagAlways.git
