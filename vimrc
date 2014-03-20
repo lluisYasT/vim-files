@@ -54,7 +54,7 @@ if has("gui_running")
   set guioptions-=r
   set guioptions-=b
   "set guioptions-=m
-	set guifont=Source\ Code\ Pro\ Medium\ 8
+	set guifont=Source\ Code\ Pro\ for\ Powerline\ Regular\ 8
 	colorscheme pyte
 endif
 
