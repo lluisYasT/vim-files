@@ -84,12 +84,6 @@ let g:tex_flavor = "latex"
 "set cpo+=J
 
 
-"If the only window left open is NERDTRee, close vim
-autocmd bufenter * if (winnr("$") == 1 && exists("b:NERDTreeType") && b:NERDTreeType == "primary") | q | endif
-"
-"Map F1 to NERDTree
-nnoremap <silent> <F1> :NERDTreeToggle<CR>
-
 map <F6> :setlocal spell! spelllang=es<CR>
 
 """"""""""""""""""""""""""""""""
@@ -141,3 +135,5 @@ vnoremap / /\v
 
 let g:airline_powerline_fonts = 1
 
+" Clear the last search
+nnoremap <esc> :noh<return><esc>
