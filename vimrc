@@ -1,4 +1,33 @@
-execute pathogen#infect()
+set nocompatible
+filetype off
+set rtp+=~/.vim/bundle/vundle/
+call vundle#rc()
+
+" Let Vundle manage Vundle, required
+Bundle 'gmarik/vundle'
+
+Bundle 'tpope/vim-fugitive'
+Bundle 'tpope/vim-rails.git'
+Bundle 'tpope/vim-commentary.git'
+Bundle 'tpope/vim-vinegar.git'
+Bundle 'tpope/vim-dispatch.git'
+Bundle 'tpope/vim-sensible.git'
+Bundle 'tpope/vim-git.git'
+Bundle 'Lokaltog/vim-easymotion'
+Bundle 'mattn/emmet-vim'
+Bundle 'mattn/gist-vim'
+Bundle 'amdt/vim-niji'
+Bundle 'scrooloose/syntastic'
+Bundle 'scrooloose/snipmate-snippets'
+Bundle 'msanders/snipmate.vim'
+Bundle 'jamessan/vim-gnupg'
+Bundle 'Valloric/MatchTagAlways'
+Bundle 'bling/vim-airline'
+Bundle 'airblade/vim-gitgutter'
+
+Bundle 'L9'
+Bundle 'FuzzyFinder'
+
 syntax on
 filetype plugin indent on
 
@@ -6,7 +35,6 @@ set ts=2 sts=2 sw=2
 "set expandtab "Use spaces instead of tabs
 
 
-set nocompatible
 set modelines=0
 set nowrap
 set copyindent
@@ -43,7 +71,7 @@ map <C-l> <C-w>l
 "In case I forget to use sudo when editing a system file
 cmap w!! w !sudo tee % > /dev/null
 
-set t_Co=256 
+set t_Co=256
 
 colorscheme ir_black
 
@@ -55,14 +83,13 @@ if has("gui_running")
   set guioptions-=b
   "set guioptions-=m
 	set guifont=Source\ Code\ Pro\ for\ Powerline\ Regular\ 8
-	colorscheme pyte
+	colorscheme molokai
 endif
 
 if has("gui_macvim")
 	set guifont=Source\ Code\ Pro\ for\ Powerline:h11
 endif
 
-call togglebg#map("<F5>")
 
 nnoremap <leader>w <C-w>v<C-w>l
 
@@ -136,4 +163,4 @@ vnoremap / /\v
 let g:airline_powerline_fonts = 1
 
 " Clear the last search
-nnoremap <esc> :noh<return><esc>
+"nnoremap <esc> :noh<return><esc>
