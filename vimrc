@@ -34,7 +34,7 @@ syntax on
 filetype plugin indent on
 
 set ts=2 sts=2 sw=2
-"set expandtab "Use spaces instead of tabs
+set expandtab "Use spaces instead of tabs
 
 
 set modelines=0
@@ -61,6 +61,7 @@ set textwidth=79
 set formatoptions=qrnl
 "set colorcolumn=85
 set autowrite
+set history=200
 
 au FocusLost * :wa
 
@@ -84,7 +85,7 @@ if has("gui_running")
   set guioptions-=r
   set guioptions-=b
   "set guioptions-=m
-	set guifont=Source\ Code\ Pro\ for\ Powerline\ Regular\ 8
+	set guifont=Terminess\ Powerline\ 10
 	colorscheme molokai
 endif
 
