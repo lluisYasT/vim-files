@@ -9,15 +9,16 @@ Bundle 'gmarik/vundle'
 Bundle 'tpope/vim-fugitive'
 Bundle 'tpope/vim-rails.git'
 Bundle 'tpope/vim-commentary.git'
-Bundle 'tpope/vim-vinegar.git'
 Bundle 'tpope/vim-dispatch.git'
 Bundle 'tpope/vim-sensible.git'
 Bundle 'tpope/vim-git.git'
+Bundle 'dhruvasagar/vim-vinegar.git'
 Bundle 'Lokaltog/vim-easymotion'
 Bundle 'mattn/emmet-vim'
 Bundle 'mattn/gist-vim'
 Bundle 'amdt/vim-niji'
 Bundle 'scrooloose/syntastic'
+Bundle 'scrooloose/nerdtree'
 Bundle 'scrooloose/snipmate-snippets'
 Bundle 'msanders/snipmate.vim'
 Bundle 'jamessan/vim-gnupg'
@@ -34,7 +35,7 @@ syntax on
 filetype plugin indent on
 
 set ts=2 sts=2 sw=2
-"set expandtab "Use spaces instead of tabs
+set expandtab "Use spaces instead of tabs
 
 
 set modelines=0
@@ -62,7 +63,7 @@ set formatoptions=qrnl
 "set colorcolumn=85
 set autowrite
 
-au FocusLost * :wa
+"au FocusLost * :wa
 
 "Fast window switching
 map <C-h> <C-w>h
@@ -75,7 +76,7 @@ cmap w!! w !sudo tee % > /dev/null
 
 set t_Co=256
 
-colorscheme ir_black
+colorscheme zenburn
 
 if has("gui_running")
   set lines=55
@@ -84,8 +85,9 @@ if has("gui_running")
   set guioptions-=r
   set guioptions-=b
   "set guioptions-=m
-	set guifont=Source\ Code\ Pro\ for\ Powerline\ Regular\ 8
-	colorscheme molokai
+	"set guifont=Source\ Code\ Pro\ for\ Powerline\ Regular\ 8
+	"set guifont=Terminess\ Powerline\ 8
+	set guifont=Consolas\ 10
 endif
 
 if has("gui_macvim")
