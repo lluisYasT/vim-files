@@ -62,6 +62,7 @@ set textwidth=79
 set formatoptions=qrnl
 "set colorcolumn=85
 set autowrite
+set history=200
 
 "au FocusLost * :wa
 
