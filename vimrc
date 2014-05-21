@@ -13,6 +13,7 @@ Bundle 'tpope/vim-vinegar.git'
 Bundle 'tpope/vim-dispatch.git'
 Bundle 'tpope/vim-sensible.git'
 Bundle 'tpope/vim-git.git'
+Bundle 'tpope/vim-unimpaired.git'
 Bundle 'Lokaltog/vim-easymotion'
 Bundle 'mattn/emmet-vim'
 Bundle 'mattn/gist-vim'
@@ -251,3 +252,6 @@ endif
 " For perlomni.vim setting.
 " https://github.com/c9s/perlomni.vim
 let g:neocomplete#sources#omni#input_patterns.perl = '\h\w*->\h\w*\|\h\w*::'
+
+cnoremap <C-p> <Up>
+cnoremap <C-n> <Down>
