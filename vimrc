@@ -9,11 +9,11 @@ Bundle 'gmarik/vundle'
 Bundle 'tpope/vim-fugitive'
 Bundle 'tpope/vim-rails.git'
 Bundle 'tpope/vim-commentary.git'
-Bundle 'tpope/vim-vinegar.git'
 Bundle 'tpope/vim-dispatch.git'
 Bundle 'tpope/vim-sensible.git'
 Bundle 'tpope/vim-git.git'
 Bundle 'tpope/vim-unimpaired.git'
+Bundle 'tpope/vim-vinegar.git'
 Bundle 'Lokaltog/vim-easymotion'
 Bundle 'mattn/emmet-vim'
 Bundle 'mattn/gist-vim'
@@ -64,7 +64,7 @@ set formatoptions=qrnl
 set autowrite
 set history=200
 
-au FocusLost * :wa
+"au FocusLost * :wa
 
 "Fast window switching
 map <C-h> <C-w>h
@@ -77,7 +77,7 @@ cmap w!! w !sudo tee % > /dev/null
 
 set t_Co=256
 
-colorscheme ir_black
+colorscheme zenburn
 
 if has("gui_running")
   set lines=55
@@ -86,8 +86,9 @@ if has("gui_running")
   set guioptions-=r
   set guioptions-=b
   "set guioptions-=m
-	set guifont=Terminess\ Powerline\ 10
-	colorscheme molokai
+	"set guifont=Source\ Code\ Pro\ for\ Powerline\ Regular\ 8
+	"set guifont=Terminess\ Powerline\ 8
+	set guifont=Consolas\ 10
 endif
 
 if has("gui_macvim")
