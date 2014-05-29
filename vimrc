@@ -27,6 +27,7 @@ Bundle 'bling/vim-airline'
 Bundle 'airblade/vim-gitgutter'
 Bundle 'Shougo/neocomplete.vim'
 Bundle 'Shougo/neosnippet'
+Bundle 'altercation/vim-colors-solarized'
 
 Bundle 'L9'
 Bundle 'FuzzyFinder'
@@ -42,7 +43,6 @@ set modelines=0
 set nowrap
 set copyindent
 set number
-"set ignorecase
 set smartcase
 set hlsearch
 set undolevels=1000
@@ -55,7 +55,6 @@ set wildmode=list:longest
 set visualbell
 set cursorline
 set ttyfast
-set relativenumber
 set gdefault
 set wrap
 set textwidth=79
@@ -92,7 +91,10 @@ if has("gui_running")
 endif
 
 if has("gui_macvim")
-	set guifont=Source\ Code\ Pro\ for\ Powerline:h11
+  call togglebg#map("<F5>")
+	set guifont=Consolas\ 10
+	colorscheme solarized
+	"set guifont=Source\ Code\ Pro\ for\ Powerline:h11
 endif
 
 
