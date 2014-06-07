@@ -28,6 +28,7 @@ Bundle 'airblade/vim-gitgutter'
 Bundle 'Shougo/neocomplete.vim'
 Bundle 'Shougo/neosnippet'
 Bundle 'altercation/vim-colors-solarized'
+Bundle 'sheerun/vim-polyglot'
 
 Bundle 'L9'
 Bundle 'FuzzyFinder'
@@ -76,7 +77,8 @@ cmap w!! w !sudo tee % > /dev/null
 
 set t_Co=256
 
-colorscheme zenburn
+colorscheme solarized
+call togglebg#map("<F5>")
 
 if has("gui_running")
   set lines=55
@@ -91,7 +93,6 @@ if has("gui_running")
 endif
 
 if has("gui_macvim")
-  call togglebg#map("<F5>")
 	set guifont=Consolas\ 10
 	colorscheme solarized
 	"set guifont=Source\ Code\ Pro\ for\ Powerline:h11
