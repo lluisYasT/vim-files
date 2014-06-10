@@ -76,7 +76,8 @@ cmap w!! w !sudo tee % > /dev/null
 
 set t_Co=256
 
-colorscheme zenburn
+colorscheme solarized
+call togglebg#map("<F5>")
 
 if has("gui_running")
   set lines=55
@@ -85,16 +86,12 @@ if has("gui_running")
   set guioptions-=r
   set guioptions-=b
   "set guioptions-=m
-	"set guifont=Source\ Code\ Pro\ for\ Powerline\ Regular\ 8
-	"set guifont=Terminess\ Powerline\ 8
-	set guifont=Consolas\ 10
+	set guifont=Source\ Code\ Pro\ 11
 endif
 
 if has("gui_macvim")
-  call togglebg#map("<F5>")
-	set guifont=Consolas\ 10
 	colorscheme solarized
-	"set guifont=Source\ Code\ Pro\ for\ Powerline:h11
+	set guifont=Source\ Code\ Pro:h11
 endif
 
 
@@ -168,6 +165,7 @@ nnoremap / /\v
 vnoremap / /\v
 
 let g:airline_powerline_fonts = 1
+
 
 " Clear the last search
 "nnoremap <esc> :noh<return><esc>
@@ -258,3 +256,7 @@ let g:neocomplete#sources#omni#input_patterns.perl = '\h\w*->\h\w*\|\h\w*::'
 
 cnoremap <C-p> <Up>
 cnoremap <C-n> <Down>
+
+cnoremap <expr> %% getcmdtype() == ':' ? expand('%:h').'/' : '%%'
+
+runtime macros/matchit.vim
