@@ -28,6 +28,7 @@ Bundle 'airblade/vim-gitgutter'
 Bundle 'Shougo/neocomplete.vim'
 Bundle 'Shougo/neosnippet'
 Bundle 'altercation/vim-colors-solarized'
+Bundle 'sheerun/vim-polyglot'
 
 Bundle 'L9'
 Bundle 'FuzzyFinder'
