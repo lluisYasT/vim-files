@@ -33,6 +33,8 @@ Bundle 'sheerun/vim-polyglot'
 Bundle 'L9'
 Bundle 'FuzzyFinder'
 
+Bundle 'NLKNguyen/papercolor-theme'
+
 syntax on
 filetype plugin indent on
 
@@ -77,7 +79,8 @@ cmap w!! w !sudo tee % > /dev/null
 
 set t_Co=256
 
-colorscheme solarized
+set background=dark
+colorscheme ir_black
 call togglebg#map("<F5>")
 
 if has("gui_running")
@@ -86,8 +89,8 @@ if has("gui_running")
   set guioptions-=l
   set guioptions-=r
   set guioptions-=b
-  "set guioptions-=m
-	set guifont=Source\ Code\ Pro\ 11
+  set guioptions-=m
+	set guifont=Consolas\ 10
 endif
 
 if has("gui_macvim")
@@ -117,6 +120,7 @@ let g:tex_flavor = "latex"
 
 
 map <F6> :setlocal spell! spelllang=es<CR>
+map <F7> :setlocal spell! spelllang=es<CR>
 
 """"""""""""""""""""""""""""""""
 "		GnuPG Extensions		"
