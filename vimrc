@@ -4,6 +4,7 @@ set rtp+=~/.vim/bundle/Vundle.vim
 call vundle#begin()
 
 " Let Vundle manage Vundle, required
+<<<<<<< HEAD
 Bundle 'VundleVim/Vundle.vim'
 
 Plugin 'tpope/vim-fugitive'
@@ -34,6 +35,7 @@ Plugin 'sheerun/vim-polyglot'
 Plugin 'L9'
 Plugin 'FuzzyFinder'
 
+Plugin 'NLKNguyen/papercolor-theme'
 call vundle#end()
 filetype plugin indent on
 syntax on
@@ -79,6 +81,7 @@ cmap w!! w !sudo tee % > /dev/null
 
 set t_Co=256
 
+set background=dark
 colorscheme ir_black
 call togglebg#map("<F5>")
 
@@ -88,8 +91,8 @@ if has("gui_running")
   set guioptions-=l
   set guioptions-=r
   set guioptions-=b
-  "set guioptions-=m
-	set guifont=Source\ Code\ Pro\ 11
+  set guioptions-=m
+	set guifont=Consolas\ 10
 endif
 
 if has("gui_macvim")
