@@ -4,7 +4,6 @@ set rtp+=~/.vim/bundle/Vundle.vim
 call vundle#begin()
 
 " Let Vundle manage Vundle, required
-<<<<<<< HEAD
 Bundle 'VundleVim/Vundle.vim'
 
 Plugin 'tpope/vim-fugitive'
