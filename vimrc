@@ -1,40 +1,42 @@
 set nocompatible
 filetype off
-set rtp+=~/.vim/bundle/vundle/
-call vundle#rc()
+set rtp+=~/.vim/bundle/Vundle.vim
+call vundle#begin()
 
 " Let Vundle manage Vundle, required
-Bundle 'gmarik/vundle'
+Bundle 'VundleVim/Vundle.vim'
 
-Bundle 'tpope/vim-fugitive'
-Bundle 'tpope/vim-rails.git'
-Bundle 'tpope/vim-commentary.git'
-Bundle 'tpope/vim-dispatch.git'
-Bundle 'tpope/vim-sensible.git'
-Bundle 'tpope/vim-git.git'
-Bundle 'tpope/vim-unimpaired.git'
-Bundle 'tpope/vim-vinegar.git'
-Bundle 'Lokaltog/vim-easymotion'
-Bundle 'mattn/emmet-vim'
-Bundle 'mattn/gist-vim'
-Bundle 'amdt/vim-niji'
-Bundle 'scrooloose/syntastic'
-Bundle 'scrooloose/snipmate-snippets'
-Bundle 'msanders/snipmate.vim'
-Bundle 'jamessan/vim-gnupg'
-"Bundle 'Valloric/MatchTagAlways'
-Bundle 'bling/vim-airline'
-Bundle 'airblade/vim-gitgutter'
-Bundle 'Shougo/neocomplete.vim'
-Bundle 'Shougo/neosnippet'
-Bundle 'altercation/vim-colors-solarized'
-Bundle 'sheerun/vim-polyglot'
+Plugin 'tpope/vim-fugitive'
+Plugin 'tpope/vim-rails.git'
+Plugin 'tpope/vim-commentary.git'
+Plugin 'tpope/vim-dispatch.git'
+Plugin 'tpope/vim-sensible.git'
+Plugin 'tpope/vim-git.git'
+Plugin 'tpope/vim-unimpaired.git'
+Plugin 'tpope/vim-vinegar.git'
+Plugin 'Lokaltog/vim-easymotion'
+Plugin 'mattn/emmet-vim'
+Plugin 'mattn/gist-vim'
+Plugin 'amdt/vim-niji'
+Plugin 'scrooloose/syntastic'
+Plugin 'scrooloose/snipmate-snippets'
+Plugin 'msanders/snipmate.vim'
+Plugin 'jamessan/vim-gnupg'
+"Plugin 'Valloric/MatchTagAlways'
+Plugin 'bling/vim-airline'
+Plugin 'airblade/vim-gitgutter'
+Plugin 'Shougo/neocomplete.vim'
+Plugin 'Shougo/neosnippet'
+Plugin 'Shougo/neosnippet-snippets'
+Plugin 'altercation/vim-colors-solarized'
+Plugin 'sheerun/vim-polyglot'
 
-Bundle 'L9'
-Bundle 'FuzzyFinder'
+Plugin 'L9'
+Plugin 'FuzzyFinder'
 
-syntax on
+call vundle#end()
 filetype plugin indent on
+syntax on
 
 set ts=2 sts=2 sw=2
 set expandtab "Use spaces instead of tabs
@@ -77,7 +79,7 @@ cmap w!! w !sudo tee % > /dev/null
 
 set t_Co=256
 
-colorscheme solarized
+colorscheme ir_black
 call togglebg#map("<F5>")
 
 if has("gui_running")
@@ -117,6 +119,7 @@ let g:tex_flavor = "latex"
 
 
 map <F6> :setlocal spell! spelllang=es<CR>
+map <F7> :setlocal spell! spelllang=en<CR>
 
 """"""""""""""""""""""""""""""""
 "		GnuPG Extensions		"
@@ -261,3 +264,32 @@ cnoremap <C-n> <Down>
 cnoremap <expr> %% getcmdtype() == ':' ? expand('%:h').'/' : '%%'
 
 runtime macros/matchit.vim
+
+
+set statusline+=%#warningmsg#
+set statusline+=%{SyntasticStatuslineFlag()}
+set statusline+=%*
+
+let g:syntastic_always_populate_loc_list = 1
+let g:syntastic_auto_loc_list = 1
+let g:syntastic_check_on_open = 1
+let g:syntastic_check_on_wq = 0
+let g:syntastic_javascript_checkers = ['eslint']
+
+" Plugin key-mappings.
+imap <C-k>     <Plug>(neosnippet_expand_or_jump)
+smap <C-k>     <Plug>(neosnippet_expand_or_jump)
+xmap <C-k>     <Plug>(neosnippet_expand_target)
+
+" SuperTab like snippets behavior.
+"imap <expr><TAB>
+" \ pumvisible() ? "\<C-n>" :
+" \ neosnippet#expandable_or_jumpable() ?
+" \    "\<Plug>(neosnippet_expand_or_jump)" : "\<TAB>"
+smap <expr><TAB> neosnippet#expandable_or_jumpable() ?
+\ "\<Plug>(neosnippet_expand_or_jump)" : "\<TAB>"
+
+" For conceal markers.
+if has('conceal')
+  set conceallevel=2 concealcursor=niv
+  endif
