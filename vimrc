@@ -14,6 +14,7 @@ Plugin 'tpope/vim-sensible.git'
 Plugin 'tpope/vim-git.git'
 Plugin 'tpope/vim-unimpaired.git'
 Plugin 'tpope/vim-vinegar.git'
+Plugin 'tpope/vim-obsession.git'
 Plugin 'Lokaltog/vim-easymotion'
 Plugin 'mattn/emmet-vim'
 Plugin 'mattn/gist-vim'
@@ -30,6 +31,7 @@ Plugin 'Shougo/neosnippet'
 Plugin 'Shougo/neosnippet-snippets'
 Plugin 'altercation/vim-colors-solarized'
 Plugin 'sheerun/vim-polyglot'
+Plugin 'morhetz/gruvbox'
 
 Plugin 'L9'
 Plugin 'FuzzyFinder'
@@ -81,7 +83,7 @@ cmap w!! w !sudo tee % > /dev/null
 set t_Co=256
 
 set background=dark
-colorscheme ir_black
+colorscheme gruvbox
 call togglebg#map("<F5>")
 
 if has("gui_running")
