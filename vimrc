@@ -18,7 +18,7 @@ Plugin 'tpope/vim-obsession.git'
 Plugin 'Lokaltog/vim-easymotion'
 Plugin 'mattn/emmet-vim'
 Plugin 'mattn/gist-vim'
-Plugin 'amdt/vim-niji'
+Plugin 'raymond-w-ko/vim-niji'
 Plugin 'scrooloose/syntastic'
 Plugin 'scrooloose/snipmate-snippets'
 Plugin 'msanders/snipmate.vim'
@@ -37,6 +37,9 @@ Plugin 'L9'
 Plugin 'FuzzyFinder'
 
 Plugin 'NLKNguyen/papercolor-theme'
+
+Plugin 'digitaltoad/vim-pug.git'
+
 call vundle#end()
 filetype plugin indent on
 syntax on
@@ -279,6 +282,8 @@ let g:syntastic_auto_loc_list = 1
 let g:syntastic_check_on_open = 1
 let g:syntastic_check_on_wq = 0
 let g:syntastic_javascript_checkers = ['eslint']
+let g:syntastic_perl_checkers = ['perl']
+let g:syntastic_enable_perl_checker = 1
 
 " Plugin key-mappings.
 imap <C-k>     <Plug>(neosnippet_expand_or_jump)
