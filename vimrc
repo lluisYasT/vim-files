@@ -40,6 +40,8 @@ Plugin 'NLKNguyen/papercolor-theme'
 
 Plugin 'digitaltoad/vim-pug.git'
 
+Plugin 'dracula/vim'
+
 call vundle#end()
 filetype plugin indent on
 syntax on
@@ -86,7 +88,8 @@ cmap w!! w !sudo tee % > /dev/null
 set t_Co=256
 
 set background=dark
-colorscheme gruvbox
+let g:dracula_colorterm = 0
+colorscheme dracula
 call togglebg#map("<F5>")
 
 if has("gui_running")
@@ -98,12 +101,6 @@ if has("gui_running")
   set guioptions-=m
 	set guifont=Consolas\ 10
 endif
-
-if has("gui_macvim")
-	colorscheme solarized
-	set guifont=Source\ Code\ Pro:h11
-endif
-
 
 nnoremap <leader>w <C-w>v<C-w>l
 
