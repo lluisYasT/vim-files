@@ -89,7 +89,7 @@ set t_Co=256
 
 set background=dark
 let g:dracula_colorterm = 0
-colorscheme dracula
+colorscheme solarized
 call togglebg#map("<F5>")
 
 if has("gui_running")
