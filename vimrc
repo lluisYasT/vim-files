@@ -42,6 +42,8 @@ Plugin 'digitaltoad/vim-pug.git'
 
 Plugin 'dracula/vim'
 
+Plugin 'pearofducks/ansible-vim'
+
 call vundle#end()
 filetype plugin indent on
 syntax on
@@ -219,3 +221,7 @@ let g:neosnippet#enable_snipmate_compatibility = 1
 
 " Tell Neosnippet about the other snippets
 let g:neosnippet#snippets_directory='~/.vim/bundle/snipmate-snippets/'
+
+let g:ansible_attribute_highlight = 'ab'
+let g:ansible_name_highlight = 'b'
+let g:ansible_extra_keywords_highlight = 1
