@@ -48,6 +48,8 @@ Plugin 'pangloss/vim-javascript'
 Plugin 'nathanaelkane/vim-indent-guides'
 
 
+Plugin 'pearofducks/ansible-vim'
+
 call vundle#end()
 filetype plugin indent on
 syntax on
@@ -234,3 +236,6 @@ autocmd VimEnter,Colorscheme * :hi IndentGuidesEven guibg=green ctermbg=4
 
 autocmd Filetype markdown map <F5> :!pandoc<space><C-r>%<space>-o<space><C-r>%.pdf<Enter><Enter>
 autocmd Filetype rmd map <F5> :!echo<space>"require(rmarkdown);<space>render('<c-r>%')"<space>\|<space>R<space>--vanilla<enter>
+let g:ansible_attribute_highlight = 'ab'
+let g:ansible_name_highlight = 'b'
+let g:ansible_extra_keywords_highlight = 1
