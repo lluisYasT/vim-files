@@ -32,6 +32,8 @@ Plugin 'Shougo/neosnippet-snippets'
 Plugin 'altercation/vim-colors-solarized'
 Plugin 'sheerun/vim-polyglot'
 Plugin 'morhetz/gruvbox'
+Plugin 'godlygeek/tabular'
+Plugin 'plasticboy/vim-markdown'
 
 Plugin 'L9'
 Plugin 'FuzzyFinder'
@@ -41,6 +43,10 @@ Plugin 'NLKNguyen/papercolor-theme'
 Plugin 'digitaltoad/vim-pug.git'
 
 Plugin 'dracula/vim'
+Plugin 'elzr/vim-json'
+Plugin 'pangloss/vim-javascript'
+Plugin 'nathanaelkane/vim-indent-guides'
+
 
 call vundle#end()
 filetype plugin indent on
@@ -89,7 +95,7 @@ set t_Co=256
 
 set background=dark
 let g:dracula_colorterm = 0
-colorscheme dracula
+colorscheme solarized
 call togglebg#map("<F5>")
 
 if has("gui_running")
@@ -219,3 +225,12 @@ let g:neosnippet#enable_snipmate_compatibility = 1
 
 " Tell Neosnippet about the other snippets
 let g:neosnippet#snippets_directory='~/.vim/bundle/snipmate-snippets/'
+
+let g:indent_guides_enable_on_vim_startup = 1
+let g:indent_guides_auto_colors = 0
+let g:indent_guides_guide_size = 1
+autocmd VimEnter,Colorscheme * :hi IndentGuidesOdd  guibg=blue   ctermbg=3
+autocmd VimEnter,Colorscheme * :hi IndentGuidesEven guibg=green ctermbg=4
+
+autocmd Filetype markdown map <F5> :!pandoc<space><C-r>%<space>-o<space><C-r>%.pdf<Enter><Enter>
+autocmd Filetype rmd map <F5> :!echo<space>"require(rmarkdown);<space>render('<c-r>%')"<space>\|<space>R<space>--vanilla<enter>
