@@ -24,7 +24,7 @@ Plugin 'scrooloose/syntastic'
 Plugin 'scrooloose/snipmate-snippets'
 Plugin 'msanders/snipmate.vim'
 Plugin 'jamessan/vim-gnupg'
-"Plugin 'Valloric/MatchTagAlways'
+Plugin 'Valloric/MatchTagAlways'
 Plugin 'tpope/vim-airline'
 Plugin 'vim-airline/vim-airline-themes'
 Plugin 'airblade/vim-gitgutter'
@@ -47,9 +47,9 @@ Plugin 'dracula/vim'
 Plugin 'elzr/vim-json'
 Plugin 'pangloss/vim-javascript'
 Plugin 'nathanaelkane/vim-indent-guides'
-
-
 Plugin 'pearofducks/ansible-vim'
+
+Plugin 'ycm-core/YouCompleteMe'
 
 call vundle#end()
 filetype plugin indent on
@@ -98,7 +98,7 @@ set t_Co=256
 
 set background=dark
 let g:dracula_colorterm = 0
-colorscheme solarized
+colorscheme dracula
 call togglebg#map("<F5>")
 
 if has("gui_running")
@@ -229,7 +229,7 @@ let g:neosnippet#enable_snipmate_compatibility = 1
 " Tell Neosnippet about the other snippets
 let g:neosnippet#snippets_directory='~/.vim/bundle/snipmate-snippets/'
 
-let g:indent_guides_enable_on_vim_startup = 1
+let g:indent_guides_enable_on_vim_startup = 0
 let g:indent_guides_auto_colors = 0
 let g:indent_guides_guide_size = 1
 autocmd VimEnter,Colorscheme * :hi IndentGuidesOdd  guibg=blue   ctermbg=3
